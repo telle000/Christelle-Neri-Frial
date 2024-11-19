@@ -1,0 +1,141 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #f5f5dc; /* Beige background for a friendly, playful feel */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+  }
+  
+  /* Header Styling */
+  header {
+    background: linear-gradient(to right, #ff6f91, #ff9671); /* Gradient for a colorful header */
+    padding: 1.2em;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    font-size: 2.8em;
+    text-shadow: 1px 1px #b3424a;
+    margin-bottom: 0.4em;
+  }
+  
+  nav a {
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    background-color: #ff7b54; /* Coral color button */
+    padding: 10px 18px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #ffb8a0; /* Light coral on hover */
+  }
+  
+  /* Main Content Styling */
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+    background: url('https://www.transparenttextures.com/patterns/cubes.png'); /* Light cube pattern */
+  }
+  
+  .learning-content {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border: 5px solid #ff9671;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 90%;
+    animation: pop 0.4s ease;
+  }
+  
+  .learning-content:hover {
+    transform: scale(1.03); /* Slight grow on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .learning-content p {
+    font-size: 2.2em;
+    color: #ff6f91;
+    text-shadow: 1px 1px #ff9671;
+    margin-bottom: 20px;
+  }
+  
+  /* Image Styling */
+  .learning-content img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 6px solid #ff7b54;
+    padding: 8px;
+    background-color: #ffb8a0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .learning-content img:hover {
+    transform: rotate(-10deg) scale(1.05); /* Rotates slightly on hover */
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #ff9671;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.1em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Pop Animation */
+  @keyframes pop {
+    0% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.2em;
+    }
+  
+    nav a {
+      font-size: 1em;
+      padding: 8px 14px;
+    }
+  
+    .learning-content p {
+      font-size: 1.8em;
+    }
+  
+    .learning-content img {
+      width: 240px;
+      height: 240px;
+    }
+  }
+  

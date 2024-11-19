@@ -1,0 +1,132 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e6f0e4; /* Light sage green for a natural vibe */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+  }
+  
+  /* Header Styling */
+  header {
+    background: linear-gradient(135deg, #558b2f, #33691e); /* Earthy gradient */
+    padding: 1.5em;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  header h1 {
+    font-size: 2.8em;
+    text-shadow: 2px 2px #004d00;
+  }
+  
+  nav a {
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #6d9e5e; /* Olive green for consistency */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #558b2f; /* Darker green on hover */
+  }
+  
+  /* Main Content Styling */
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 30px;
+    background: url('https://www.transparenttextures.com/patterns/paper-1.png'); /* Subtle paper texture */
+  }
+  
+  .learning-content {
+    text-align: center;
+    background: #ffffff;
+    padding: 30px;
+    border: 8px solid #a5d6a7; /* Sage border for strength */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    width: 90%;
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .learning-content:hover {
+    transform: scale(1.05); /* Slightly larger on hover */
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
+  }
+  
+  .learning-content p {
+    font-size: 2.5em;
+    color: #4b5320;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Image Styling */
+  .learning-content img {
+    width: 280px;
+    height: 280px;
+    border-radius: 20px;
+    border: 6px solid #558b2f; /* Bold, earthy border */
+    padding: 8px;
+    background-color: #e6f0e4;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .learning-content img:hover {
+    transform: scale(1.08); /* Slight zoom on hover */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #33691e;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.1em;
+    font-style: italic;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.4em;
+    }
+  
+    nav a {
+      font-size: 1em;
+      padding: 8px 12px;
+    }
+  
+    .learning-content p {
+      font-size: 2em;
+    }
+  
+    .learning-content img {
+      width: 240px;
+      height: 240px;
+    }
+  }
+  

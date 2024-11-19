@@ -1,0 +1,136 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #e0f7fa; /* Light sky blue background for a soft, nature-like feel */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #4caf50; /* Green background reminiscent of nature */
+    padding: 1em;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    text-shadow: 1px 1px #2e7d32;
+    margin-bottom: 0.5em;
+  }
+  
+  nav a {
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    background-color: #66bb6a; /* Softer green button */
+    padding: 10px 20px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #388e3c; /* Darker green on hover */
+  }
+  
+  /* Main Content Styling */
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+    background: linear-gradient(to bottom, #e0f7fa, #b2ebf2); /* Subtle gradient for depth */
+  }
+  
+  .learning-content {
+    text-align: center;
+    background-color: #fff;
+    padding: 25px;
+    border: 3px dashed #4caf50;
+    border-radius: 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+    transform: rotate(-2deg);
+    transition: transform 0.3s ease;
+  }
+  
+  .learning-content:hover {
+    transform: rotate(0deg); /* Straighten on hover */
+  }
+  
+  .learning-content p {
+    font-size: 2.2em;
+    color: #2e7d32;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px #b2dfdb; /* Shadow for subtle 3D effect */
+  }
+  
+  .learning-content img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 4px solid #4caf50;
+    padding: 5px;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  /* Float Animation for the Image */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Float up and down */
+    }
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #66bb6a;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.1em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2em;
+    }
+  
+    nav a {
+      font-size: 1em;
+      padding: 8px 16px;
+    }
+  
+    .learning-content p {
+      font-size: 2em;
+    }
+  
+    .learning-content img {
+      width: 240px;
+      height: 240px;
+    }
+  }
+  
