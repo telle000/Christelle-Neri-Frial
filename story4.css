@@ -1,0 +1,227 @@
+/* General Styles */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f0f8ff; /* Light blue background for a soft, sky-like feel */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: #388e3c; /* Deep green for a nature-inspired, earthy tone */
+    padding: 3em 1em;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-bottom: 4px solid #4caf50;
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin: 0;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #e8f5e9;
+    text-decoration: underline;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Main Story Content */
+main {
+    width: 85%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85); /* Soft white background with slight transparency */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.story-content {
+    line-height: 1.8;
+    font-size: 1.2em;
+    color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white for the content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Adding a subtle animation for the content */
+.story-content {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    font-size: 2.8em;
+    color: #4caf50;
+    text-align: center;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 2.4em;
+    color: #388e3c;
+    margin-top: 40px;
+    text-align: left;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.1em;
+    margin: 20px 0;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-style: italic;
+    font-size: 1.1em;
+    border-top: 4px solid #388e3c;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Decorative Elements - Background, Nature & Scrollbars */
+main {
+    background-image: url('images/forest_background.jpg'); /* Adding a nature-themed background */
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight white overlay for readability */
+}
+
+.story-content {
+    background-color: rgba(255, 255, 255, 0.9); /* Transparent white background for the text area */
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+button {
+    background-color: #ffeb3b; /* Golden yellow for a magical, friendly feel */
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    color: #333;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #388e3c; /* Green color on hover to match the forest theme */
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Scrollbar Styling */
+html::-webkit-scrollbar {
+    width: 12px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #4caf50;
+    border-radius: 8px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background-color: #388e3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.8em;
+    }
+
+    nav a {
+        font-size: 1.1em;
+        margin: 0 15px;
+    }
+
+    main {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 2.3em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    nav a {
+        font-size: 1em;
+        margin: 0 5px;
+    }
+
+    main {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.9em;
+    }
+
+    h3 {
+        font-size: 1.7em;
+    }
+
+    p {
+        font-size: 0.95em;
+    }
+}

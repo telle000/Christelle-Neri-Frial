@@ -1,0 +1,234 @@
+/* General styling */
+body {
+  font-family: 'Comic Sans MS', sans-serif;
+  background-image: url('https://cdn.wallpapersafari.com/59/52/0kjwKe.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #14e7ee;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ff9800;
+  padding: 1.5em;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+  text-shadow: 2px 2px #333;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+nav a:hover {
+  color: #333;
+}
+
+/* Main section styling */
+main {
+  padding: 2em;
+  text-align: center;
+}
+
+h1 {
+  color: darkblue;
+}
+
+h2 {
+  color: black;
+}
+
+/* Footer styling */
+footer {
+  background-color: #ffcc99;
+  color: #333;
+  padding: 10px;
+  text-align: center;
+  font-style: italic;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Learning links */
+.learning-links {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.learning-topic {
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.learning-topic:hover {
+  background-color: #ff4d4d;
+}
+
+.learning-content {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.learning-content img {
+  margin-top: 1em;
+  border-radius: 8px;
+}
+
+/* Alphabet and Numbers styling */
+.abc, .numbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.abc a, .numbers span {
+  text-decoration: none;
+}
+
+.abc span, .numbers span {
+  display: inline-block;
+  font-size: 2em;
+  background-color: #ff6f61;
+  color: #fff;
+  padding: 20px 10px;
+  border-radius: 5px;
+  text-align: center;
+  width: 50px;
+  margin: 10px 0;
+}
+
+/* Shapes styling */
+.shapes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.shape {
+  font-size: 1.5em;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square {
+  background-color: #ff6f61;
+}
+
+.circle {
+  background-color: #4CAF50;
+  border-radius: 50%;
+}
+
+.rectangle {
+  background-color: #ff9800;
+  width: 150px;
+}
+
+/* Animal Links styling */
+.animals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.animals a {
+  background-color: #f1f1f1;
+  color: #4CAF50;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.animals a:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Feature card styling */
+.intro, .features {
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature {
+  background-color: #effaff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  transition: transform 0.2s ease;
+}
+
+.feature:hover {
+  transform: scale(1.02);
+}
+
+.feature h3 {
+  font-size: 1.5em;
+  color: #ff5733;
+}
+
+.feature a {
+  text-decoration: none;
+  color: #008cba;
+  font-weight: bold;
+}
+
+.feature a:hover {
+  color: #005f73;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  iframe {
+    max-width: 100%;
+    height: 400px;
+  }
+  main {
+    padding: 1em;
+  }
+}

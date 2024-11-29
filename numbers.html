@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Numbers</title>
+</head>
+<body>
+  <header>
+    <h1>Kids Entertainment</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="learning.html">Learning</a>
+    </nav>
+  </header>
+  <style>
+     * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f8ff; /* Light sky blue background */
+      color: #333;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100vh;
+    }
+
+    header {
+    background-color: #ff9800;
+    padding: 1.5em;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+    header h1 {
+      font-size: 3.5em;
+      letter-spacing: 2px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  
+  nav a:hover {
+    color: #333;
+  }
+
+    /* Main Content Styling */
+    main {
+      flex: 1;
+      padding: 50px 20px;
+    }
+
+    .learning-content {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .learning-content h2 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .numbers {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); /* 5 numbers per row */
+      gap: 15px;
+      justify-items: center;
+      font-size: 2em;
+    }
+
+    .numbers span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ff6347; /* Tomato red background */
+      color: white;
+      font-size: 2em;
+      font-weight: bold;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .numbers span:hover {
+      transform: scale(1.2); /* Hover effect for numbers */
+      background-color: #fbc02d; /* Change to yellow on hover */
+    }
+
+     /* Footer styling */
+  footer {
+    background-color: #ffcc99;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+} 
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .learning-content h2 {
+        font-size: 2.5em;
+      }
+
+      .numbers {
+        grid-template-columns: repeat(4, 1fr); /* 4 numbers per row on smaller screens */
+      }
+
+      .numbers span {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .numbers {
+        grid-template-columns: repeat(3, 1fr); /* 3 numbers per row on very small screens */
+      }
+
+      .numbers span {
+        width: 45px;
+        height: 45px;
+        font-size: 1.5em;
+      }
+    }
+  </style>
+  <main>
+    <section class="learning-content">
+      <h2>Learn Numbers</h2>
+      <div class="numbers">
+        <a href="number1.html"><span>1</span></a>
+        <a href="number2.html"><span>2</span></a>
+        <a href="number3.html"><span>3</span></a>
+        <a href="number4.html"><span>4</span></a>
+        <a href="number5.html"><span>5</span></a>
+        <a href="number6.html"><span>6</span></a>
+        <a href="number7.html"><span>7</span></a>
+        <a href="number8.html"><span>8</span></a>
+        <a href="number9.html"><span>9</span></a>
+        <a href="number10.html"><span>10</span></a>
+      </div>
+      
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 Kids Entertainment</p>
+  </footer>
+</body>
+</html>

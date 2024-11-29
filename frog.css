@@ -1,0 +1,142 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Verdana', sans-serif;
+    background: #b2e8b3; /* Light green background to evoke nature */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: #ff9800;
+    padding: 1.5em;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 2px 2px #333;
+  }
+  
+  nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  
+  nav a:hover {
+    color: #333;
+  }
+  
+  /* Main Content Styling */
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 30px;
+    background: url('https://www.transparenttextures.com/patterns/cubes.png'); /* Light textured pattern */
+  }
+  
+  .learning-content {
+    text-align: center;
+    background: #ffffff;
+    padding: 30px;
+    border: 8px solid #81c784; /* Lighter green border to complement frog theme */
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    width: 90%;
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .learning-content:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .learning-content p {
+    font-size: 2.5em;
+    color: #2c6b2f;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px #c8e6c9; /* Light green shadow for text */
+  }
+  
+  /* Image Styling */
+  .learning-content img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%; /* Circular frog image */
+    border: 6px solid #4caf50; /* Green border to emphasize frog theme */
+    padding: 8px;
+    background-color: #c8e6c9; /* Light green background for the image */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .learning-content img:hover {
+    transform: scale(1.08); /* Slight zoom effect */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Footer Styling */
+footer {
+  background-color: #ffcc99;
+  color: #333;
+  padding: 15px;
+  text-align: center;
+  font-style: italic;
+  width: 100%;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
+}
+  
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.2em;
+    }
+
+    .learning-content h2 {
+      font-size: 2em;
+    }
+
+    .learning-content p {
+      font-size: 1em;
+    }
+
+    nav a {
+      font-size: 1em;
+      padding: 8px 15px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 2em;
+    }
+
+    .learning-content h2 {
+      font-size: 1.8em;
+    }
+
+    .learning-content p {
+      font-size: 0.9em;
+    }
+  }
+  

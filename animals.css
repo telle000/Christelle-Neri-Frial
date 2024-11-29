@@ -1,0 +1,135 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Soft sky blue background for a calm, pleasant feel */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: #ff9800;
+    padding: 1.5em;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 2px 2px #333;
+  }
+  
+  nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  
+  nav a:hover {
+    color: #333;
+  }
+  
+  nav a:hover {
+    background-color: #ff4500; /* Darker shade of tomato for hover */
+    transform: scale(1.1); /* Slight zoom-in effect */
+  }
+  
+  /* Main Content Styling */
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 50px 0;
+  }
+  
+  .learning-content {
+    text-align: center;
+    padding: 30px;
+    background-color: #ffffe0; /* Light yellow for fun, kid-friendly background */
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  .learning-content h2 {
+    font-size: 2.5em;
+    color: #ff7f50;
+    margin-bottom: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-transform: uppercase;
+  }
+  
+  /* Animals Grid Styling */
+  .animals {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .animals a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff6347;
+    padding: 15px 25px;
+    font-size: 1.4em;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .animals a:hover {
+    background-color: #ff4500; /* Hover effect with darker shade */
+    transform: scale(1.1); /* Slight zoom-in effect */
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #ff7f50;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 1.2em;
+    font-style: italic;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.5em;
+    }
+  
+    nav a {
+      font-size: 1em;
+      padding: 8px 18px;
+    }
+  
+    .learning-content h2 {
+      font-size: 2em;
+    }
+  
+    .animals a {
+      font-size: 1.2em;
+      padding: 12px 22px;
+    }
+  }
+  
